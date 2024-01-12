@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Set the background color to black */
+    color: #fff;
+    overflow: hidden; /* Set the text color to white */
+}
+
+.navbar {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align: right; /* Align text to the right */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    
+}
+
+.navbar li {
+    display: inline-block;
+       
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+}
+.navbar a:hover {
+    background-color: #222; 
+}
+
+.time-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #111;
+    padding: 10px;
+}
+
+.time-section div {
+    text-align: center;
+}
+
+.full-screen-link {
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    
+}
+.full-screen-link a{
+    text-decoration: none;
+    color:#aaa;
+     
+}
+.time-show{
+    color: azure;
+    font-size: 32px;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    width: 100%;
+}
+
+.target,
+.executed {
+    flex: 1;
+    margin-right: 20px;
+}
+
+h2 {
+    color: azure;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+textarea {
+    
+    width: 100%;
+    height: 60vh;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid #52b8c5; /* Dark border for dark mode */
+    border-radius: 5px;
+    resize: vertical;
+    color: azure; /* Dark text for textarea */
+    background-color: #111;
+    outline: none;
+    overflow: hidden;
+    font-size: 20px; 
+}

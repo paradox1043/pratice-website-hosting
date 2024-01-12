@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: black; /* Change the background color as needed */
+            color: azure;
+            font-size: 35vh;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            /* Adjust font size for smaller screens */
+            body {
+                font-size: 20vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="time"></div>
+
+    <script>
+        function updateTime() {
+            let date = new Date();
+            let timeElement = document.getElementById('time');
+
+            let options = {
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false
+            };
+
+            timeElement.innerText = date.toLocaleTimeString(undefined, options);
+        }
+
+        // Call updateTime function initially
+        updateTime();
+
+        // Update time every second
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
